@@ -23,3 +23,5 @@ services:
       - ./envs/database.env
     ports:
       - 33060:3306
+    volumes:
+      - ./db-backup:/var/lib/mysql
